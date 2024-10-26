@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shrek Adventure</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Menu principal -->
+    <div id="menu" class="menu">
+        <h1 id="game-title">Xereck Adventure 1</h1>
+        <button id="start-button">Iniciar</button>
+        <!-- Botão para controle de música -->
+        <button id="music-toggle-button">
+            <img id="music-icon" src="img/botao-play.jpeg" alt="Music Icon" />
+        </button>
+    </div>
+    
+    <!-- Tela de Game Over (escondida) -->
+    <div id="game-over" class="hidden">
+        <button id="restart-button">YES</button>
+        <button id="back-to-menu-button">NO</button>
+    </div>
+    
+    <!-- Tela de Vitória (escondida) -->
+    <div id="victory-screen" class="hidden">
+        <img src="img/fundo-vitória.jpeg" alt="Tela de Vitória" />
+        <button id="restart-button-victory" class="absolute">Reiniciar Jogo</button>
+    </div>
+
+    <!-- Área do jogo -->
+    <div class="game hidden"> 
+        <div id="Shrek">
+            <img src="img/xereck.gif" alt="Shrek" />
+        </div>
+        <div class="monstro" id="monstro1">
+            <img src="img/monstro1.gif" alt="Monstro 1">
+        </div>
+        <div class="monstro" id="boss" style="display:none;">
+            <img src="img/boss.gif" alt="Boss">
+        </div>
+        <div id="contador">
+            Pontos: <span id="contador-value">0</span>
+        </div>
+    </div>
+
+    <!-- Músicas -->
+    <audio id="musica-menu1" src="music/musica-menu1.mp3"></audio>
+    <audio id="musica-menu2" src="music/Musica-menu2-Magic Box - If You... (Radio Mix).mp3"></audio>
+    <audio id="musica-jogo" src="music/musica-jogo.mp3" loop></audio>
+    <audio id="musica-gameover" src="music/musica-gameover.mp3"></audio>
+    <audio id="musica-vitoria1" src="music/Basshunter - DotA (HQ).mp3"></audio>
+    <audio id="musica-vitoria2" src="music/Now you are gone (1).mp3"></audio>
+
+    <script src="main.js"></script>
+</body>
+</html>
